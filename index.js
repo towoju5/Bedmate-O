@@ -1,6 +1,7 @@
 const navMobile = document.querySelector(".mobile-nav");
 const navToggle = document.querySelector(".nav-toggle");
 const closeNavMobile = document.querySelector(".close-btn");
+const pageWrap = document.querySelector(".page-wrap");
 const monthlyBtn = document.querySelector(".monthly-btn");
 const yearlyBtn = document.querySelector(".yearly-btn");
 const targetBlocks = document.querySelectorAll(".target-block");
@@ -11,9 +12,11 @@ const romaticLeft = document.querySelector(".romantic-left");
 
 navToggle.addEventListener("click", () => {
   navMobile.classList.remove("hidden");
+  pageWrap.classList.add("hidden");
 });
 closeNavMobile.addEventListener("click", () => {
   navMobile.classList.add("hidden");
+  pageWrap.classList.remove("hidden");
 });
 
 window.addEventListener("scroll", () => {

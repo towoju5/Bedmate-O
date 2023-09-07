@@ -171,7 +171,11 @@ body {
 
 .testing {
   background: linear-gradient(132deg, #ff7448 26%, #ff4848 51%, #6248ff 75%);
-  color: #ebe5e5; }
+  color: #ebe5e5;
+  background: #ffffff40;
+  border-radius: 8px;
+  border: 2px solid #14141440;
+  background: rgba(255, 255, 255, 0.05); }
 
 @media (max-width: 488px) {
   .nav .nav-list {
@@ -182,7 +186,7 @@ body {
     display: flex;
     cursor: pointer; }
   .mobile-nav {
-    z-index: 4; }
+    z-index: 5; }
   .showcase .showcase-text .app-links,
   .showcase .showcase-text .showcase-count {
     display: none; }
