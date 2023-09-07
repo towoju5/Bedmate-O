@@ -267,6 +267,9 @@ body {
 }
 
 @media (max-width: 488px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav {
     .nav-list {
       display: none;
