@@ -588,6 +588,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .-mt-1{
   margin-top: -0.25rem;
 }
@@ -692,6 +697,10 @@ video {
   height: 40px;
 }
 
+.h-\[500px\]{
+  height: 500px;
+}
+
 .h-\[600px\]{
   height: 600px;
 }
@@ -722,6 +731,10 @@ video {
 
 .w-\[70\%\]{
   width: 70%;
+}
+
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .w-full{
@@ -952,6 +965,11 @@ video {
 .py-\[5px\]{
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-10{
@@ -1264,6 +1282,13 @@ body {
   z-index: 1;
 }
 
+.show-low {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../Assets/bg-love.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
 .footer .footer-top {
   border-bottom: solid 1px #0a142f;
 }
@@ -1440,6 +1465,10 @@ body {
     height: 70vh;
   }
 
+  .lg\:h-\[500px\]{
+    height: 500px;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -1486,6 +1515,10 @@ body {
 
   .lg\:gap-48{
     gap: 12rem;
+  }
+
+  .lg\:gap-0{
+    gap: 0px;
   }
 
   .lg\:p-5{
@@ -1548,6 +1581,10 @@ body {
 
   .lg\:text-left{
     text-align: left;
+  }
+
+  .lg\:text-right{
+    text-align: right;
   }
 
   .lg\:text-4xl{
