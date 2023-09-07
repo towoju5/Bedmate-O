@@ -184,8 +184,6 @@ body {
   background: rgba(255, 255, 255, 0.05); }
 
 @media (max-width: 488px) {
-  body {
-    overflow-x: hidden; }
   .nav .nav-list {
     display: none; }
   .nav .app-links {
