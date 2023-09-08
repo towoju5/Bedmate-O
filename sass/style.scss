@@ -214,6 +214,9 @@ body {
 .on-mobile-show {
   display: none;
 }
+input:focus {
+  outline: none !important;
+}
 .cont {
   opacity: 0;
   transform: translateY(100px);
@@ -238,6 +241,9 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
+.mobile-form {
+  display: none;
+}
 // singles />
 
 // Goal page
@@ -253,6 +259,44 @@ body {
   .triangle-bg1,
   .triangle-bg2 {
     z-index: -1;
+  }
+}
+
+// Waiting list page
+
+.waitlist {
+  .wait-showcase {
+    position: relative;
+
+    .wait-showcase-img-wrap {
+      z-index: -1;
+      position: relative;
+    }
+    .bolb3 {
+      background: linear-gradient(
+        132deg,
+        #ff7448 26%,
+        #ff4848 51%,
+        #6248ff 75%
+      );
+      // transform: rotate(34.471deg);
+      width: 408px;
+      height: 700px;
+      margin-top: 100px;
+      float: right;
+      margin-right: -100px;
+      z-index: -1;
+      filter: blur(32px);
+    }
+
+    .wait-showcase-img {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 0;
+      float: right;
+      margin-right: -80px;
+    }
   }
 }
 
@@ -283,6 +327,7 @@ body {
   .mobile-nav {
     z-index: 5;
   }
+
   .showcase {
     .showcase-text {
       .app-links,
@@ -314,6 +359,42 @@ body {
       }
     }
   }
+
+  .wait-showcase {
+    display: flex;
+    align-items: center;
+    margin-top: -18px;
+
+    .wait-showcase-text {
+      margin-top: 60px;
+      .form-wrap {
+        display: none;
+      }
+    }
+    .wait-showsace-img-wrap {
+      margin-left: auto;
+      margin-top: 30px;
+
+      .bolb3 {
+        display: none;
+      }
+
+      .wait-showcase-img {
+        left: 0px !important;
+        width: 100%;
+
+        img {
+          width: 70%;
+          float: right;
+        }
+      }
+    }
+  }
+
+  .mobile-form {
+    display: block;
+  }
+
   .on-mobile-show {
     display: block;
   }
@@ -332,6 +413,13 @@ body {
   }
   .triangle-bg {
     display: none;
+  }
+
+  .waitlist {
+    .nav {
+      background: #e21f4e;
+      border-radius: 30px;
+    }
   }
 
   .footer {
