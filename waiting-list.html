@@ -20,7 +20,17 @@
     />
   </head>
 
-  <body class="waitlist bg-mainThemeColor overflow-x-hidden">
+  <body
+    class="waitlist overflow-x-hidden"
+    style="
+      background: linear-gradient(
+        120deg,
+        #f4d8d6 30%,
+        rgba(244, 218, 214, 0.06) 80%,
+        #d3d3d3
+      );
+    "
+  >
     <div
       class="mobile-nav absolute top-0 left-0 right-0 h-[100vh] bg-[#E84C71] hidden"
     >
@@ -182,18 +192,298 @@
           </div>
         </h1>
 
-        <div>
-          <div>
-            <p>Enter e-mail & join the waitlist</p>
-            <p>
+        <div class="lg:py-10 py-20 flex items-center target-block">
+          <div class="w-1/2">
+            <p class="lg:text-5xl text-base font-bold mb-2">
+              Enter e-mail & join the waitlist
+            </p>
+            <p class="lg:text-xl text-xs lg:w-[70%] lg:leading-10 leading-7">
               Quick as a blink, enter e-mail and hit the "Join Waitlist" button
               below. We promise it's painless.
             </p>
           </div>
-          <div></div>
+
+          <div class="w-1/2">
+            <img
+              src="./Assets/waitlist1.png"
+              alt=""
+              class="cont"
+              width="100%"
+            />
+          </div>
+        </div>
+
+        <div class="flex items-center target-block">
+          <div class="w-[30%]">
+            <img
+              src="./Assets/waitlist3.png"
+              alt=""
+              width="100%"
+              class="cont"
+            />
+          </div>
+          <div class="w-[70%]">
+            <p class="lg:text-5xl text-base font-bold mb-2">Stay in the Know</p>
+            <p class="lg:text-xl text-xs lg:w-[80%] lg:leading-10 leading-7">
+              Expect updates, insider scoops, and magical notifications as we
+              gear up for the big launch.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:py-10 py-20 flex items-center target-block">
+          <div class="w-1/2">
+            <p class="lg:text-5xl text-base font-bold mb-2">
+              Find Your Companion
+            </p>
+            <p class="lg:text-xl text-xs lg:leading-10 leading-7">
+              Once we're live, dive into a world of connections, camaraderie,
+              and unforgettable experiences!
+            </p>
+          </div>
+
+          <div class="w-1/2">
+            <img
+              src="./Assets/waitlist2.png"
+              alt=""
+              class="cont"
+              width="100%"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <h1 class="lg:text-5xl text-xl text-mainBlack text-center font-bold">
+          Frequently asked questions
+          <div class="flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="630"
+              height="8"
+              viewBox="0 0 630 8"
+              fill="none"
+            >
+              <path
+                d="M243.453 0.198621C275.501 0.342069 307.549 0.485517 339.597 0.573793C351.294 0.573793 362.911 0.463448 374.609 0.518621L498.233 1.05931C516.501 1.16966 534.928 1.19172 553.115 1.21379C576.938 1.05738 600.81 1.30943 624.181 1.96414C625.944 2.02422 627.553 2.15024 628.828 2.32828C629.636 2.4341 629.832 2.60102 629.309 2.73655C627.355 3.06531 625.028 3.34849 622.419 3.57517C613.485 4.47393 603.033 5.04364 592.053 5.23034C568.819 5.51724 545.264 5.87035 521.628 6.10207L503.762 6.26759H485.975C474.037 6.26759 461.939 6.15724 450.162 6.0469C421.559 5.7931 391.915 6.23448 362.671 6.33379C330.623 6.4331 298.575 6.47724 266.047 6.53241L206.598 6.63172C176.553 6.69793 146.348 6.63172 116.624 6.85241C105.007 6.94069 93.5494 7.12828 82.1724 7.3269L65.0268 7.6469C59.2582 7.73517 53.5697 7.79034 47.8011 7.84552C42.0325 7.90069 37.8663 7.98897 32.7387 8C13.7503 8 7.66122 7.54759 3.57512 5.98069C2.4916 5.62154 1.58159 5.25292 0.851055 4.87724C-0.911576 3.68552 6.69979 2.67034 20.3201 2.18483C40.655 1.39635 61.4628 0.860871 82.4929 0.584828C103.644 0.331034 125.197 0.209655 146.589 0.110345C162.613 0.0441379 178.636 0.022069 194.66 0H242.732L243.453 0.198621Z"
+                fill="#231F20"
+              />
+            </svg>
+          </div>
+        </h1>
+
+        <div class="accordian lg:mt-20 mt-10 lg:w-[60%] w-[80%] mx-auto">
+          <div class="accordian-item border-t-2 border-black">
+            <div class="accordian-head py-3 px-1 flex items-center">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <img
+                src="./Assets/vector.svg"
+                alt=""
+                class="accordian-btn cursor-pointer ml-2"
+              />
+            </div>
+
+            <div class="accordian-body pb-10 hidden lg:px-10 px-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                harum excepturi officiis doloribus hic, beatae saepe dicta
+                delectus. Molestias minima impedit est sapiente possimus ad
+                pariatur placeat, iusto in beatae.
+              </p>
+              <button class="text-xs bg-mainPink py-2 px-5 float-right">
+                Read more
+              </button>
+            </div>
+          </div>
+
+          <div class="accordian-item border-t-2 border-black">
+            <div class="accordian-head py-3 px-1 flex items-center">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+              <img
+                src="./Assets/vector.svg"
+                alt=""
+                class="accordian-btn cursor-pointer ml-2"
+              />
+            </div>
+
+            <div class="accordian-body pb-10 hidden lg:px-10 px-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                harum excepturi officiis doloribus hic, beatae saepe dicta
+                delectus. Molestias minima impedit est sapiente possimus ad
+                pariatur placeat, iusto in beatae.
+              </p>
+              <button class="text-xs bg-mainPink py-2 px-5 float-right">
+                Read more
+              </button>
+            </div>
+          </div>
+
+          <div class="accordian-item border-t-2 border-black">
+            <div class="accordian-head py-3 px-1 flex items-center">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img
+                src="./Assets/vector.svg"
+                alt=""
+                class="accordian-btn cursor-pointer ml-2"
+              />
+            </div>
+
+            <div class="accordian-body pb-10 hidden lg:px-10 px-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                harum excepturi officiis doloribus hic, beatae saepe dicta
+                delectus. Molestias minima impedit est sapiente possimus ad
+                pariatur placeat, iusto in beatae.
+              </p>
+              <button class="text-xs bg-mainPink py-2 px-5 float-right">
+                Read more
+              </button>
+            </div>
+          </div>
+
+          <div class="accordian-item border-y-2 border-black">
+            <div class="accordian-head py-3 px-1 flex items-center">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores.
+              </p>
+              <img
+                src="./Assets/vector.svg"
+                alt=""
+                class="accordian-btn cursor-pointer ml-2"
+              />
+            </div>
+
+            <div class="accordian-body pb-10 hidden lg:px-10 px-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                harum excepturi officiis doloribus hic, beatae saepe dicta
+                delectus. Molestias minima impedit est sapiente possimus ad
+                pariatur placeat, iusto in beatae.
+              </p>
+              <button class="text-xs bg-mainPink py-2 px-5 float-right">
+                Read more
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-20 text-center text-[#161616]">
+            <p class="lg:text-2xl font-bold">Have more questions?</p>
+            <p class="my-4">
+              Just reach out, we’re always around to answer any questions.
+            </p>
+
+            <button
+              class="w-[130px] mx-auto border-2 border-black bg-mainWhite py-2 rounded-lg"
+            >
+              contact us
+            </button>
+          </div>
         </div>
       </section>
     </div>
+
+    <footer class="bg-[#0A0A0A] py-24 mt-24">
+      <div class="lg:w-[60%] mx-auto text-mainWhite">
+        <div>
+          <h1 class="lg:text-5xl text-xl text-center font-bold">
+            Got Ideas
+            <div class="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="394"
+                height="7"
+                viewBox="0 0 394 7"
+                fill="none"
+              >
+                <path
+                  d="M152.235 0.173793C172.259 0.29931 192.282 0.424828 212.306 0.502069C219.614 0.502069 226.873 0.405517 234.181 0.453793L311.422 0.926897C322.836 1.02345 334.349 1.04276 345.713 1.06207C360.597 0.925206 375.512 1.14575 390.115 1.71862C391.216 1.7712 392.221 1.88146 393.018 2.03724C393.522 2.12984 393.645 2.27589 393.318 2.39448C392.097 2.68214 390.644 2.92992 389.013 3.12828C383.432 3.91469 376.901 4.41319 370.041 4.57655C355.524 4.82759 340.807 5.13655 326.039 5.33931L314.876 5.48414H303.763C296.304 5.48414 288.746 5.38759 281.387 5.29103C263.516 5.06897 244.994 5.45517 226.723 5.54207C206.699 5.62897 186.676 5.66759 166.352 5.71586L129.208 5.80276C110.436 5.86069 91.5639 5.80276 72.9921 5.99586C65.7336 6.0731 58.5752 6.23724 51.4668 6.41103L40.7542 6.69103C37.15 6.76828 33.5958 6.81655 29.9916 6.86483C26.3873 6.9131 23.7843 6.99034 20.5805 7C8.71657 7 4.9121 6.60414 2.3591 5.2331C1.68212 4.91885 1.11354 4.59631 0.657104 4.26759C-0.44419 3.22483 4.3114 2.33655 12.8214 1.91172C25.5267 1.22181 38.5274 0.753262 51.667 0.511724C64.8826 0.289655 78.3484 0.183448 91.7141 0.0965517C101.726 0.0386207 111.738 0.0193103 121.749 0H151.785L152.235 0.173793Z"
+                  fill="#EBE4E4"
+                />
+              </svg>
+            </div>
+          </h1>
+        </div>
+
+        <div class="p-10">
+          <form action="" class="pb-10 border-y-2 border-[#FFFFFF26]">
+            <h2 class="text-center text-3xl mt-10">
+              First, tell us about yourself
+            </h2>
+
+            <div class="grid grid-cols-2 gap-5 mt-10">
+              <div class="w-full">
+                <label class="font-bold" for="your-name">YOUR NAME*</label
+                ><br />
+                <input
+                  type="text"
+                  class="w-full bg-[#ffffff0d] py-2 px-5 mt-3 rounded-lg border-2 border-[#ffffff0d]"
+                  id="your-name"
+                />
+              </div>
+              <div class="w-full">
+                <label class="font-bold" for="email">EMAIL*</label><br />
+                <input
+                  type="email"
+                  class="w-full bg-[#ffffff0d] py-2 px-5 mt-3 rounded-lg border-2 border-[#ffffff0d]"
+                  id="email"
+                />
+              </div>
+              <div class="w-full">
+                <label class="font-bold" for="country">COUNTRY*</label><br />
+                <input
+                  type="text"
+                  class="w-full bg-[#ffffff0d] py-2 px-5 mt-3 rounded-lg border-2 border-[#ffffff0d]"
+                  id="country"
+                />
+              </div>
+              <div class="w-full">
+                <label class="font-bold" for="city">CITY*</label><br />
+                <input
+                  type="text"
+                  class="w-full bg-[#ffffff0d] py-2 px-5 mt-3 rounded-lg border-2 border-[#ffffff0d]"
+                  id="city"
+                />
+              </div>
+            </div>
+          </form>
+
+          <div>
+            <h2 class="text-center text-3xl my-10">
+              Lastly, Drop Any Suggestion
+            </h2>
+
+            <div>
+              <label class="font-bold" for="subject">SUBJECT</label>
+              <input
+                type="text"
+                class="w-full bg-transparent mt-3 py-2 px-5 rounded-lg border-2 border-[#ffffff0d]"
+                id="subject"
+                placeholder="Lorem ipsum dolor sit amet consectetur. Tortor netus morbi."
+              />
+            </div>
+
+            <div class="mt-5">
+              <label class="font-bold" for="suggestion">SUGGESTION</label>
+              <textarea
+                id="suggestion"
+                rows="5"
+                class="w-full bg-transparent mt-3 py-2 px-5 rounded-lg border-2 border-[#ffffff0d]"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <button
+              class="border-2 border-black text-black bg-mainWhite py-2 px-10 rounded-lg"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- <footer class="footer bg-[#E21F4ECC] lg:px-32 lg:py-20 px-5 pt-10 pb-3">
       <div class="footer-wrap">

@@ -51,10 +51,27 @@ if (document.querySelector(".pricing")) {
   });
 }
 
-window.addEventListener("scroll", () => {
-  const blockPosition = romaticBlock.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-  if (blockPosition < screenHeight / 2) {
-    romaticLeft.classList.add("romantic-animate");
-  } else romaticLeft.classList.remove("romantic-animate");
-});
+if (document.querySelector(".goal")) {
+  window.addEventListener("scroll", () => {
+    const blockPosition = romaticBlock.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+    if (blockPosition < screenHeight / 2) {
+      romaticLeft.classList.add("romantic-animate");
+    } else romaticLeft.classList.remove("romantic-animate");
+  });
+}
+
+// accodion
+const accBtns = document.querySelectorAll(".accordian-btn");
+console.log(accBtns);
+const accBodys = document.querySelectorAll(".accordian-body");
+console.log(accBodys);
+
+if (document.querySelector(".waitlist")) {
+  accBtns.forEach((accBtn, index) => {
+    accBtn.addEventListener("click", () => {
+      accBodys[index].classList.toggle("hidden");
+      accBtn.classList.toggle("rotate");
+    });
+  });
+}
